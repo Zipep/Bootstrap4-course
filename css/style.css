@@ -8,6 +8,13 @@
     padding: 0px 0px 50px 0px;
     min-height: 400px;
 }
+.row-content:nth-child(1){
+    border-bottom: 1px ridge;
+}
+
+.row-content:nth-child(2){
+    border-bottom: 1px ridge;
+}
 
 .row-content-feedback{
     margin-bottom: 50px;
@@ -54,4 +61,11 @@ body{
 
 .navbar-dark{
     background-color: #512DA8;
+}
+
+.tab-content{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
 }
