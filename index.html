@@ -203,7 +203,7 @@
                                  src="img/alberto.png" alt="alberto">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h2>Alberto Somayya</h2>
-                                    <h4>Executive Chef</h4>
+                                    <h4>Executive Chef</h4>                                    
                                     <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience 
                                      having worked closely with whos-who in the culinary world, 
                                      he specializes in creating mouthwatering Indo-Italian fusion experiences. 
@@ -222,6 +222,14 @@
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+                    <div class="btn-group" id="carouselButtons">
+                        <button class="btn btn-danger btn-sm" aria-hidden="true" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-danger btn-sm" aria-hidden="true" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -327,9 +335,20 @@
         </div>
     </footer>
 
-</body>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#mycarousel').carousel({interval: 4000});
+            $('#carousel-pause').click(function(){
+                $('#mycarousel').carousel('pause');
+            });
+            $('#carousel-play').click(function(){
+                $('#mycarousel').carousel('cycle');
+            });
+        });
+    </script>
+</body>
 </html>

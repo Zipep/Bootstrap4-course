@@ -8,12 +8,10 @@
     padding: 0px 0px 50px 0px;
     min-height: 300px;
 }
-#topogigio{
-    padding: 0px 0px 60px 0px;
-}
 
 .row-content:nth-child(2){
     border-bottom: 1px ridge;
+   /* border-top: 1px ridge;*/
 }
 
 .row-content:nth-child(3){
@@ -78,19 +76,19 @@ body{
     background-color: #512DA8;
     margin-top: 40px;
 }
-
-.carousel-caption{
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.carousel.item{
+.carousel-item{
     height: 300px;
 }
 
-.carousel.item img{
+.carousel-item img{
     position: absolute;
     top: 0;
     left: 0;
     min-height: 300px;
+}
+
+#carouselButtons{
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
 }
