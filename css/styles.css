@@ -1,3 +1,13 @@
+.modal-header {
+  background-color: #512DA8;
+  color: #FFFAF0; }
+
+.close {
+  color: #FFFAF0; }
+
+.modal-body {
+  background-color: #D1C4E9; }
+
 .row-header {
   margin: 0px auto;
   padding: 0px 0px; }
@@ -7,6 +17,23 @@
   padding: 50px 0px;
   border-bottom: 1px ridge;
   min-height: 400px; }
+
+.row-content-feedback {
+  margin-bottom: 50px; }
+
+.row-content-feedback h3 {
+  margin-bottom: 35px; }
+
+.row-number1 {
+  padding-bottom: 50px;
+  border-bottom: 1px ridge; }
+
+.row-number2 {
+  margin-top: 50px;
+  padding-bottom: 50px; }
+
+.rowbreadcrumB {
+  min-height: 25px; }
 
 .footer {
   background-color: #D1C4E9;

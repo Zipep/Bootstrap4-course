@@ -30,7 +30,7 @@
                 <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
             </ul>
             <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal">
+                <a id="loginButton">
                     <span class="fa fa-sign-in"></span> Login
                 </a>
             </span>
@@ -89,14 +89,14 @@
                     <img src="img/logo.png" class="img-fluid" alt="logo">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#reservationModal"
+                    <a class="btn btn-warning btn-lg btn-block" id="reservationButton"
                       href="#reservationModal" type="button" aria-hidden="true" 
                     alt="reserve a table button">Reserve table</a>
                 </div>
             </div>
         </div>
     </header>
-
+              <!--Reservation Modal-->
     <div id="reservationModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content" aria-hidden="true">
             <div class="modal-content">
@@ -336,7 +336,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('#mycarousel').carousel({interval: 4000});
+            $('#mycarousel').carousel({interval: 3000});
             $('#carouselButton').click(function(){
                 if ($('#carouselButton').children('span').hasClass('fa-pause')){
                     $('#mycarousel').carousel('pause');
@@ -349,6 +349,20 @@
                     $('#carouselButton').children('span').addClass('fa-pause');
                 }
             });            
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#reservationButton').click(function(){
+                $('#reservationModal').modal('toggle');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#loginButton').click(function(){
+                $('#loginModal').modal('toggle');
+            });
         });
     </script>
 </body>
